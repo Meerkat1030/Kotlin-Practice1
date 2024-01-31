@@ -5,24 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView3"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:text="버튼1"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:padding="230px"
+        android:layout_marginBottom="300px"
+        android:visibility="invisible"/>
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="77dp"
-        android:layout_height="82dp"
-        android:layout_marginBottom="56dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        tools:layout_editor_absoluteX="167dp" />
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요?"
+        android:textColor="#FFFF00"
+        android:textSize="100px"
+        android:textStyle="bold"
+        android:autoLink="email|phone"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textAlignment="center"/>
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
