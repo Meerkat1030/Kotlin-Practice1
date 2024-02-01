@@ -8,6 +8,15 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="eventex">
+        <State />
+      </entry>
+      <entry key="kakao_password">
+        <State />
+      </entry>
+      <entry key="layoutex">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

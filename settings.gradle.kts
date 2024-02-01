@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "class20240130"
 include(":app")
 include(":kakao_password")
+include(":layoutex")
+include(":eventex")
