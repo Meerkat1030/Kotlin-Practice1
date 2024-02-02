@@ -14,9 +14,20 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btn1.setOnClickListener({
-            Log.d("test","버튼 1 클릭했습니다.")
-        })
+        // SAM(Single Abstract Method) 기법
+        // - 자바 API를 코틀린에서 람다 표현식을 사용할 수 있게  해주는 기법
+
+//        binding.btn1.setOnClickListener({
+//            Log.d("test","버튼 1 클릭했습니다.")
+//        })
+        binding.btn1.setOnClickListener{
+            Log.d("test", "클릭 이벤트")
+        }
+
+        binding.btn1.setOnLongClickListener{
+            Log.d("test", "롱클릭 이벤트")
+            true
+        }
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
